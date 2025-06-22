@@ -55,10 +55,20 @@ body {
     font-weight: 500; 
    } 
 
+   .chapter {
+background-color: #3c3838;
+width: 1300px;
+margin: auto;
+padding: 10px;
+margin-top: 10px;
+
+   }
+
   .title-1 {
+    color:white;
     text-align: center;
     font-weight: bold;
-    font: 18pt Helvetica;
+    font: 20pt Helvetica;
   }
 
   .port {
@@ -69,6 +79,9 @@ body {
 .portblue {
   border: 2px solid #6699FF;
 }
+.portred {
+  border: 2px solid #FF0000;
+}
 
 .words {
  text-align: left;
@@ -76,6 +89,12 @@ body {
 
 .nameblue {
   color: #6699FF;
+  font: 16pt Helvetica;
+  font-weight: 700;
+}
+
+.namered {
+  color: #FF0000;
   font: 16pt Helvetica;
   font-weight: 700;
 }
