@@ -1,0 +1,92 @@
+.maince {
+ 
+  margin: auto;
+  color: white;
+  background-color: #000099;
+  padding: 3px;
+  background-image: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/bg_map_tiancheng.png);
+  background-size: auto 100%;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
+  width: 1280px;
+  
+  
+}
+
+.maince1 {
+  margin: auto;
+  color: white;
+  background-color: #000000;
+  padding: 10px;
+  text-align: left;
+  width: 1280px;
+
+
+
+}
+
+.maince2 {
+ 
+  margin: auto;
+  color: white;
+  background-color: #000099;
+  padding: 3px;
+  background-image: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/bg_story_tiancheng1.png);
+  background-size: auto 100%;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
+  width: 1280px;
+  border-spacing: 10px;
+  
+  
+}
+
+.pict1 {
+
+  width: 1280px;
+}
+
+
+
+
+body {
+  background-color: #b8c1c9;
+  text-align: center;
+  text-stroke: 1px #FFFFFF;
+    font: 14pt Helvetica; 
+    font-weight: 500; 
+   } 
+
+  .title-1 {
+    text-align: center;
+    font-weight: bold;
+    font: 18pt Helvetica;
+  }
+
+  .port {
+  width: 116px;
+
+}
+
+.portblue {
+  border: 2px solid #6699FF;
+}
+
+.words {
+ text-align: left;
+} 
+
+.nameblue {
+  color: #6699FF;
+  font: 16pt Helvetica;
+  font-weight: 700;
+}
+
+.loc {
+ text-align: center; 
+}
+
+.pict {
+width: auto;
+}
+
+.main {
+  width: 100%;
