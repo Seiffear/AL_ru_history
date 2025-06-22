@@ -32,7 +32,7 @@
   padding: 3px;
   background-image: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/bg_story_tiancheng1.png);
   background-size: auto 100%;
-  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
   width: 1280px;
   border-spacing: 10px;
   
@@ -51,7 +51,7 @@ body {
   background-color: #b8c1c9;
   text-align: center;
   text-stroke: 1px #FFFFFF;
-    font: 14pt Helvetica; 
+    font: 16pt Helvetica; 
     font-weight: 500; 
    } 
 
@@ -73,19 +73,39 @@ margin-top: 10px;
 
   .port {
   width: 116px;
+  color: #FF0000;
+  font: 16pt Helvetica;
+  font-weight: 700;
 
 }
 
 .portblue {
   border: 2px solid #6699FF;
 }
+
+.portbluex {
+  color: #6699FF;
+  font: 16pt Helvetica;
+  font-weight: 700;
+}
+
+
 .portred {
   border: 2px solid #FF0000;
+
 }
 
 .words {
  text-align: left;
 } 
+
+.wordsleft {
+ text-align: left;
+}
+
+.wordsright {
+ text-align: right;
+}  
 
 .nameblue {
   color: #6699FF;
