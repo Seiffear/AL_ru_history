@@ -1,3 +1,148 @@
+#demo {
+        
+         font: 20pt Helvetica;
+         margin: 5px;
+         padding: 8px;
+
+         
+     }
+
+    #demo .wrapper {
+        display: inline-block;
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        top: 0; 
+        left: 0;       
+
+    }
+    
+    #demo .parent {
+      padding: 8px;
+        height: 100%;
+        width: 100%;
+        display: block;
+        cursor: pointer;
+        line-height: 50px;
+        height: 50px;
+        border-radius: 5px;
+        background: #333333;
+        border: 1px solid #AAA;
+        border-bottom: 1px solid #777;
+        color: #ffffff;
+        font-weight: bold;
+        z-index: 2;
+        position: relative;
+        -webkit-transition: border-radius .1s linear, background .1s linear, z-index 0s linear;
+        -webkit-transition-delay: .8s;
+        text-align: center;
+    }
+    
+    #demo .parent:hover,
+    #demo .content:hover ~ .parent {
+        background: #444;
+        -webkit-transition-delay: 0s, 0s, 0s;
+    }
+    
+    #demo .content:hover ~ .parent {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        z-index: 0;
+    }
+    
+    #demo .content {
+        position: absolute;
+        top: 0;
+        display: block;
+        z-index: 1;
+        height: 0;
+        width: 30%;
+        padding-top: 50px;
+        -webkit-transition: height .5s ease;
+        -webkit-transition-delay: .4s;
+        border: 1px solid #777;
+        border-radius: 5px;
+        box-shadow: 0 1px 2px rgba(0,0,0,.4);
+    }
+    
+    #demo .wrapper:active .content {
+        height: 680px;
+        z-index: 3;
+        -webkit-transition-delay: 0s;
+    }
+    
+    #demo .content:hover {
+        height: 680px;
+        z-index: 3;
+        -webkit-transition-delay: 0s;
+    }
+    
+    
+    #demo .content ul {
+        background: #333;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        height: 100%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    
+    #demo .content ul a {
+        text-decoration: none;
+    }
+    
+    #demo .content li:hover {
+        background: #eee;
+        color: #444;
+    }
+
+    html {
+scroll-behavior: smooth;
+}
+
+    
+    #demo .content li {
+        list-style: none;
+        text-align: left;
+        color: #fff;
+        font-size: 16px;
+        line-height: 30px;
+        height: 30px;
+        padding-left: 10px;
+        border-top: 1px solid #ccc;
+    }
+    
+    #demo .content li:last-of-type {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+
+    .ttt {
+     font: 20pt Helvetica;
+    width: 100%;
+    height: 40px;
+    color: #ffffff;
+    background-color: #333;
+     
+    }
+
+    td.list   {
+      width: 30%;
+      text-align: left;
+      font: 16pt Helvetica;
+    }
+    td.list1   {
+      margin-left: 30%;
+      text-align: left;
+    }
+
+    .t1 {
+      width: 100%;
+      text-align: center;
+    }
+
 .maince {
  
   margin: auto;
@@ -70,6 +215,36 @@
   
 }
 
+.maince5 {
+ 
+  margin: auto;
+  color: white;
+  background-color: #000099;
+  padding: 3px;
+  background-image: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/bg_story_tiancheng4.png);
+  background-size: auto 100%;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
+  width: 1280px;
+  border-spacing: 10px;
+  
+  
+}
+
+.maince6 {
+ 
+  margin: auto;
+  color: white;
+  background-color: #000099;
+  padding: 3px;
+  background-image: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/bg_story_tiancheng6.png);
+  background-size: auto 100%;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
+  width: 1280px;
+  border-spacing: 10px;
+  
+  
+}
+
 .pict1 {
 
   width: 1280px;
@@ -124,6 +299,12 @@ margin-top: 10px;
   font-weight: 700;
 }
 
+.portwhite {
+  color: #FFFFFF;
+  font: 16pt Helvetica;
+  font-weight: 700;
+}
+
 
 .portred img {
   border: 2px solid #FF0000;
@@ -165,3 +346,4 @@ width: auto;
 
 .main {
   width: 100%;
+
