@@ -8,7 +8,7 @@
 }
 
 .head_ev_diverchess {
-  width: 100%;
+  min-width: 1280px;
 background: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/head.png), no-repeat center top #192455;
   background-attachment: fixed;
 
@@ -16,7 +16,7 @@ background: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/he
 
 .head_ev_info {
 
-  width: 1280px;
+  min-width: 1280px;
   margin: 0 auto;
   padding-top: 8px
 }
@@ -30,7 +30,7 @@ h1 {
 
 .nav {
   margin: 5px;
-  width: 100%;
+  min-width: 1280px;
 }
 
 #floating-button {
