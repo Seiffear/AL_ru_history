@@ -8,6 +8,7 @@
 }
 
 .head_ev_diverchess {
+  width: 100%;
 background: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/head.png), no-repeat center top #192455;
   background-attachment: fixed;
 
