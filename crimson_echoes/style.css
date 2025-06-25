@@ -1,152 +1,74 @@
-.t1 {
-  position: fixed;
-        top: 0; 
-        left: 0; 
-        background: #333333;
-        color: #ffffff;
-        font: 20pt Helvetica;
-}
+.head_ev {
 
-
-#demo {
-        
-         font: 20pt Helvetica;
-         margin: 5px;
-         padding: 8px;
-
-         
-     }
-
-    #demo .wrapper {
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-              
-
-    }
-    
-    #demo .parent {
-        height: 100%;
-        width: 100%;
-        display: inline-block;
-        cursor: pointer;
-        line-height: 50px;
-        border-radius: 5px;
-        background: #333333;
-        border: 1px solid #AAA;
-        border-bottom: 1px solid #777;
-        color: #ffffff;
-        font-weight: bold;
-        z-index: 2;
-        position: relative;
-        -webkit-transition-delay: .8s;
-        text-align: center;
-    }
-    
-    
-    
-    
-    
-    #demo .content {
-      left: 0;
-        position: absolute;
-        display: block;
-        z-index: 1;
-        height: 0;
-        width: 30%;
-        padding-top: 50px;
-        -webkit-transition: height .5s ease;
-        -webkit-transition-delay: .4s;
-        box-shadow: 0 1px 2px rgba(0,0,0,.4);
-    }
-    
-    #demo .wrapper:active .content {
-        height: 680px;
-        z-index: 3;
-        -webkit-transition-delay: 0s;
-    }
-    
-    #demo .content:hover {
-        height: 680px;
-        z-index: 3;
-        -webkit-transition-delay: 0s;
-    }
-    
-    
-    #demo .content ul {
-        background: #333;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        height: 100%;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-    }
-    
-    #demo .content ul a {
-        text-decoration: none;
-    }
-    
-    #demo .content li:hover {
-        background: #eee;
-        color: #444;
-    }
-
-    html {
-scroll-behavior: smooth;
-}
-
-    
-    #demo .content li {
-        list-style: none;
-        text-align: left;
-        color: #fff;
-        font-size: 16px;
-        line-height: 30px;
-        height: 30px;
-        padding-left: 10px;
-        border-top: 1px solid #ccc;
-    }
-    
-    #demo .content li:last-of-type {
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-    }
-
-
-    .ttt {
-     font: 20pt Helvetica;
-    width: 100%;
-    height: 40px;
-    color: #ffffff;
-    background-color: #333;
-     
-    }
-
-    td.list   {
-      width: 30%;
-      text-align: left;
-      font: 16pt Helvetica;
-    }
-    td.list1   {
-     text-align: center;
-    }
-
-    .t1 {
+  
       width: 100%;
-      text-align: center;
-    }
+    height: 360px;
+    position: relative;
+}
+
+.head_ev_diverchess {
+  min-width: 1280px;
+background: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/head.png), no-repeat center top #192455;
+  background-attachment: fixed;
+
+}
+
+.head_ev_info {
+
+  min-width: 1280px;
+  margin: 0 auto;
+  padding-top: 8px
+}
+
+h1 {
+  font: 20pt Montserrat; 
+  font-weight: 700;
+  color: red;
+  text-shadow: -1px -1px 0 black,1px -1px 0 black,-1px 1px 0 black, 1px 1px 0 black;
+}
+
+.nav {
+  margin: 5px;
+  min-width: 1280px;
+}
+
+#floating-button {
+  position: fixed;
+  z-index: 100;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+ 
+#floating-button:hover {
+   background-color: #ff7961;
+}
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 
 .maince {
  
-  margin: auto;
+ margin: auto;
   color: white;
-  background-color: #000099;
+  background-color: #000000;
   padding: 3px;
-  background-image: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/bg_map_tiancheng.png);
-  background-size: auto 100%;
-  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
   width: 1280px;
+  font: 16pt Montserrat; 
+  font-weight: 700;
+  text-shadow: -1px -1px 0 black,1px -1px 0 black,-1px 1px 0 black, 1px 1px 0 black;
   
   
 }
@@ -158,6 +80,9 @@ scroll-behavior: smooth;
   padding-left: 20%;
   text-align: left;
   width: 1280px;
+  font: 16pt Montserrat; 
+  font-weight: 700;
+  text-shadow: -1px -1px 0 black,1px -1px 0 black,-1px 1px 0 black, 1px 1px 0 black;
 
 
 
@@ -174,6 +99,9 @@ scroll-behavior: smooth;
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
   width: 1280px;
   border-spacing: 10px;
+  font: 16pt Montserrat; 
+  font-weight: 700;
+  text-shadow: -1px -1px 0 black,1px -1px 0 black,-1px 1px 0 black, 1px 1px 0 black;
   
   
 }
@@ -190,6 +118,9 @@ scroll-behavior: smooth;
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
   width: 1280px;
   border-spacing: 10px;
+  font: 16pt Montserrat; 
+  font-weight: 700;
+  text-shadow: -1px -1px 0 black,1px -1px 0 black,-1px 1px 0 black, 1px 1px 0 black;
   
   
 }
@@ -205,6 +136,9 @@ scroll-behavior: smooth;
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
   width: 1280px;
   border-spacing: 10px;
+  font: 16pt Montserrat; 
+  font-weight: 700;
+  text-shadow: -1px -1px 0 black,1px -1px 0 black,-1px 1px 0 black, 1px 1px 0 black;
   
   
 }
@@ -220,6 +154,9 @@ scroll-behavior: smooth;
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
   width: 1280px;
   border-spacing: 10px;
+  font: 16pt Montserrat; 
+  font-weight: 700;
+  text-shadow: -1px -1px 0 black,1px -1px 0 black,-1px 1px 0 black, 1px 1px 0 black;
   
   
 }
@@ -235,6 +172,9 @@ scroll-behavior: smooth;
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
   width: 1280px;
   border-spacing: 10px;
+  font: 16pt Montserrat; 
+  font-weight: 700;
+  text-shadow: -1px -1px 0 black,1px -1px 0 black,-1px 1px 0 black, 1px 1px 0 black;
   
   
 }

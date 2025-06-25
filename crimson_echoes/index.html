@@ -1,47 +1,72 @@
 <!DOCTYPE HTML>
-<head>
-  <title>Багровые отголоски</title>
-   <link rel="stylesheet" href="./style.css" />
+<html lang="ru-ru">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="./style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<title>Багровые отголоски</title>
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const backToTop = document.getElementById("floating-button");
+ 
+  // Показать/скрыть кнопку при прокрутке страницы
+  window.addEventListener("scroll", function () {
+    if (window.pageYOffset > 300) {
+      backToTop.style.display = "block";
+    } else {
+      backToTop.style.display = "none";
+    }
+  });
+ 
+  // Плавная прокрутка при клике на кнопку
+  backToTop.addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+});
+</script>
+</head>
 
 </head>
 <body>
-  <table class="t1"><tr><td class="list">
-    <div id="demo">
-    <div class="wrapper">
-        <div class="content">
-            <ul>
-                <a href="#Sequence"><li>Преемственность (Sequence)</li></a>
-                <a href="#Reminescene1"><li>Воспоминание 1 (Reminescene I)</li></a>
-                <a href="#Reminescene2"><li>Воспоминание 2 (Reminescene II)</li></a>
-                <a href="#Reminescene3"><li>Воспоминание 3 (Reminescene III)</li></a>
-                <a href="#Reminescene4"><li>Воспоминание 4 (Reminescene IV)</li></a>
-                <a href="#Reminescene5"><li>Воспоминание 5 (Reminescene V)</li></a>
-                <a href="#Reminescene6"><li>Воспоминание 6 (Reminescene VI)</li></a>
-                <a href="#Reminescene7"><li>Воспоминание 7 (Reminescene VII)</li></a>
-                <a href="#Reminescene8"><li>Воспоминание 8 (Reminescene VIII)</li></a>
-                <a href="#Reminescene9"><li>Воспоминание 9 (Reminescene IX)</li></a>
-                <a href="#Echoes1"><li>Отголоски 1(Echoes I)</li></a>
-                <a href="#Echoes2"><li>Отголоски 2(Echoes II)</li></a>
-                <a href="#Echoes3"><li>Отголоски 3(Echoes III)</li></a>
-                <a href="#Echoes4"><li>Отголоски 4(Echoes IV)</li></a>
-                <a href="#Echoes5"><li>Отголоски 5(Echoes V)</li></a>
-                <a href="#Echoes6"><li>Отголоски 6(Echoes VI)</li></a>
-                <a href="#Echoes7"><li>Отголоски 7(Echoes VII)</li></a>
-                <a href="#Echoes8"><li>Отголоски 8(Echoes VIII)</li></a>
-                <a href="#Echoes9"><li>Отголоски 9(Echoes IX)</li></a>
-                <a href="#Present"><li>Наши дни (Present)</li></a>
-                <a href="#Echoes10"><li>Отголоски 10(Echoes X)</li></a>
-                <a href="#Echoes11"><li>Отголоски 11(Echoes XI)</li></a>
-            </ul>
-        </div>
-        <div class="parent">Навигация</div>
-    </div></td><td class="list1">Багровые отголоски (Crimson Echoes)</td></tr></table>
-</div>
-    <div class="ttt">
-        Багровые отголоски
-    </div>
+  <a name="top"></a>
+  <button id="floating-button">Наверх!</button>
+
+  <header class="head_ev head_ev_diverchess">
+  <div class="head_ev_info">
     
- 
+    <h1>Багровые отголоски</h1>
+    <img src="./img/head.png"/><br>
+    </div>
+</header>
+<div class="nav">
+    <a href="#Sequence"><img src="./img/menu1.png"/></a>
+    <a href="#Reminescene1"><img src="./img/menu2.png"/></a>
+    <a href="#Reminescene2"><img src="./img/menu3.png"/></a>
+    <a href="#Reminescene3"><img src="./img/menu4.png"/></a>
+    <a href="#Reminescene4"><img src="./img/menu5.png"/></a>
+    <a href="#Reminescene5"><img src="./img/menu6.png"/></a>
+    <a href="#Reminescene6"><img src="./img/menu7.png"/></a>
+    <a href="#Reminescene7"><img src="./img/menu8.png"/></a>
+    <a href="#Reminescene8"><img src="./img/menu9.png"/></a>
+    <a href="#Reminescene9"><img src="./img/menu10.png"/></a>
+    <a href="#Echoes1"><img src="./img/menu11.png"/></a>
+    <a href="#Echoes2"><img src="./img/menu12.png"/></a>
+    <a href="#Echoes3"><img src="./img/menu13.png"/></a>
+    <a href="#Echoes4"><img src="./img/menu14.png"/></a>
+    <a href="#Echoes5"><img src="./img/menu15.png"/></a>
+    <a href="#Echoes6"><img src="./img/menu16.png"/></a>
+    <a href="#Echoes7"><img src="./img/menu17.png"/></a>
+    <a href="#Echoes8"><img src="./img/menu18.png"/></a>
+    <a href="#Echoes9"><img src="./img/menu19.png"/></a>
+    <a href="#Present"><img src="./img/menu20.png"/></a>
+    <a href="#Echoes10"><img src="./img/menu21.png"/></a>
+    <a href="#Echoes11"><img src="./img/menu22.png"/></a>
+    
+</div>
+
+
 <div class="main">
 	 	<div class="chapter">
   	<p class="title-1" id="Sequence">Преемственность</p>
@@ -2003,5 +2028,6 @@
   </table>
 </div> <!-- конец главы -->
   </div>
-</body>
 
+</body>
+</html>
