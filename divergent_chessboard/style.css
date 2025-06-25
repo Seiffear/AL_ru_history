@@ -28,50 +28,8 @@ h1 {
   text-shadow: -1px -1px 0 black,1px -1px 0 black,-1px 1px 0 black, 1px 1px 0 black;
 }
 
-.dropdown .dropbtn {
-  font: 16pt Arial;
-  font-weight: 700; 
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: gray;
-  font-family: Arial;
-  margin: 0;
-  width: 100%;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #333;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: gray;
-  color: white;
-  font-family: Arial;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  width: 960px;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
+.nav {
+  margin: 5px;
 }
 
 #floating-button {
@@ -91,8 +49,7 @@ h1 {
 }
  
 #floating-button:hover {
-  background-color: #ff7961;
-}
+   background-color: #ff7961;
 }
 
 .montserrat-<uniquifier> {
