@@ -1,3 +1,40 @@
+.buitton_back {
+    display: block;
+    margin-bottom: 8px;
+    padding-left: 22px;
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0px 1px 4px #000;
+    text-shadow: 0px 1px 4px 0px #000;
+    height: 20px;
+    line-height: 20px;
+    text-decoration: none;
+    font: 14pt Arial;
+    text-align: left;
+}
+
+.buitton_back img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -10px;
+}
+
+.buitton_back img.on {
+    opacity: 0;
+}
+
+.buitton_back a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    
+    }
+
 .head_ev {
 
   
