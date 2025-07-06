@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Множественные блоки перевода</title>
+  <style>
+    body { font-family: sans-serif; padding: 2em; }
+    .toggle-buttons { margin-bottom: 1em; }
+    button { margin-right: 1em; }
+  </style>
+</head>
+<body>
+
+  <div class="toggle-buttons">
+    <button onclick="loadTranslation('variant1')">Вариант 1</button>
+    <button onclick="loadTranslation('variant2')">Вариант 2</button>
+  </div>
+
+  <h1 data-key="title">[Заголовок]</h1>
+  <p data-key="intro">[Вступление]</p>
+  <p data-key="paragraph1">[Абзац 1]</p>
+  <p data-key="paragraph2">[Абзац 2]</p>
+  <button data-key="buttonLabel">[Кнопка]</button>
+
+  <script>
+    let translations = {};
+
+    fetch('translations.json')
+      .then(response => response.json())
+      .then(data => {
+        translations = data;
+        const saved = localStorage.getItem('selectedVariant') || 'variant1';
+        loadTranslation(saved);
+      });
+
+    function loadTranslation(variant) {
+      const data = translations[variant];
+      if (!data) return;
+
+      // Найти все элементы с data-key и заменить текст
+      document.querySelectorAll('[data-key]').forEach(el => {
+        const key = el.getAttribute('data-key');
+        if (data[key]) {
+          el.textContent = data[key];
+        }
+      });
+
+      localStorage.setItem('selectedVariant', variant);
+    }
+  </script>
+
+</body>
+</html>
