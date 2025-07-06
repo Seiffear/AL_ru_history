@@ -117,12 +117,7 @@ h1 {
   cursor: pointer;
 }
 
-.translation {
-      display: none;
-    }
-.translation.active {
-      display: block;
-    }
+
 
  
 #floating-button:hover {
