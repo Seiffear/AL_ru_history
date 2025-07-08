@@ -6,31 +6,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <title>Багровые отголоски</title>
- <script>
-  document.addEventListener("DOMContentLoaded", function () {
-  const backToTop = document.getElementById("floating-button");
- 
-  // Показать/скрыть кнопку при прокрутке страницы
-  window.addEventListener("scroll", function () {
-    if (window.pageYOffset > 300) {
-      backToTop.style.display = "block";
-    } else {
-      backToTop.style.display = "none";
-    }
-  });
- 
-  // Плавная прокрутка при клике на кнопку
-  backToTop.addEventListener("click", function (event) {
-    event.preventDefault();
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-});
-</script>
+<script src="./script.js"></script>
+
 </head>
 
 
 <body>
   <a name="top"></a>
+  <button onclick="loadTranslation('EN')" id="floating-button-EN">EN</button>
+  <button onclick="loadTranslation('CN')" id="floating-button-CN">CN</button>
   <button id="floating-button">Наверх!</button>
 
   <header class="head_ev head_ev_diverchess">
@@ -73,36 +57,36 @@
 
 <div class="main">
 	 	<div class="chapter">
-  	<p class="title-1" id="Sequence">Преемственность</p>
+  	<div data-key="chapter1" class="title-1" id="Sequence"><p>Преемственность</p></div>
   	<img class="pict" src="./img/bg_map_tiancheng.png" />
 
   <table border="0" class="maince">			
 	<tbody>
 	<tr>
-	<td class="loc" colspan="4">Где то на севере Тихого океана.
-						-- 28° 30' северной широты 177° 54' западной долготы</td>
+	<td class="loc" data-key="loc1" colspan="4"><p>Где то на севере Тихого океана.
+						-- 28° 30' северной широты 177° 54' западной долготы</p></td>
 	</tr>
 
     <tr>
       <td class="portblue blob">Хирью<img class="portblue" src="./img/hir1.png" /></td>
-      <td class="words blob">Мы готовы?! Противник контратакует!</td>
+      <td class="words blob" data-key="p1">Мы готовы?! Противник контратакует!</td>
       <td class="port"></td>
     </tr>
 
       <tr>
       <td class="port"></td>
-      <td class="words blob">Первый и Второй авианесущие дивизионы, заряжайте свои торпедоносцы. Готовьтесь к антикорабельной атаке!</td>
+      <td class="words blob" data-key="p2">Первый и Второй авианесущие дивизионы, заряжайте свои торпедоносцы. Готовьтесь к антикорабельной атаке!</td>
       <td class="portblue blob">Акаги<img class="portblue" src="./img/Aka1.png" /></td>
     </tr>
       <tr>
       <td class="portblue blob">Кага<img class="portblue" src="./img/kag1.png" /></td>
-      <td class="words blob">Что?! Менять оборудование прямо сейчас?!<br>Ни-сама, я не могу сделать это! Что если мы попадём под вражеские удары в момент когда мы не готовы?!
+      <td class="words blob"><p data-key="p3">Что?! Менять оборудование прямо сейчас?!</p><p data-key="p3-1">Ни-сама, я не могу сделать это! Что если мы попадём под вражеские удары в момент когда мы не готовы?!</p>
 </td>
       <td class="port"></td>
     </tr>
       <tr>
       <td class="port"></td>
-      <td class="words blob">Множественные цели на высоте 2000! Это вражеские самолёты!
+      <td class="words blob"  data-key="p4">Множественные цели на высоте 2000! Это вражеские самолёты!
 </td>
       <td class="portblue blob">Сорью<img class="portblue" src="./img/sor1.png" /></td>
     </tr>
@@ -130,7 +114,7 @@
 		Потерять бдительность.....в такой критический момент....<br>...<br>
 		Прости. Похоже я не смогла оправдать твои ожидания..<br>
 		.....<br>
-		Амаги...сан....<br>
+		Амаги...сама....<br>
 		...<br><br>
 	</td>
 	</tr>    
@@ -139,10 +123,13 @@
   <img class="pict1" src="./img/bg_story_tiancheng1.png" />
  <table border="0" class="maince2">			
 	<tbody>
+    <tr>
+  <td class="loc" colspan="4"><p>Много лет назад...</p></td>
+  </tr>
 	 <tr>
       <td class="port"></td>
       <td class="nameblue">Амаги:</td>
-      <td class="words">*смеётся* Шах и Мат</td>
+      <td class="words" data-key="p5">*смеётся* Шах и Мат</td>
       <td class="port"></td>
     </tr>
 
@@ -155,25 +142,25 @@
 <tr>
       <td class="port"></td>
       <td class="nameblue">Акаги:</td>
-      <td class="words">Это была твоя десятая победа подряд!</td>
+      <td class="words" data-key="p6">Это была твоя десятая победа подряд!</td>
       <td class="port"></td>
 </tr>
 <tr>
       <td class="port"></td>
       <td class="nameblue">Кага:</td>
-      <td class="words">Ты играешь грязно...! Ты выманила моего Золотого Генерала! Это было не честно!</td>
+      <td class="words" data-key="p7">Ты играешь грязно...! Ты выманила моего Золотого Генерала! Это было не честно!</td>
       <td class="port"></td>
 </tr>
 <tr>
       <td class="port"></td>
       <td class="nameblue">Амаги:</td>
-      <td class="words">Ты слишком сосредоточена на атаке. Твоя судьба была решена в тот момент когда ты выдвинула Короля на центр поля. Давай просто сойдёмся на том что скрытно наступать, при этом делая вид что ты сидишь в глухой обороне, это очень эффективная стратегия.</td>
+      <td class="words" data-key="p8">Ты слишком сосредоточена на атаке. Твоя судьба была решена в тот момент когда ты выдвинула Короля на центр поля. Давай просто сойдёмся на том что скрытно наступать, при этом делая вид что ты сидишь в глухой обороне, это очень эффективная стратегия.</td>
       <td class="port"></td>
 </tr>
 <tr>
       <td class="port"></td>
       <td class="nameblue">Кага:</td>
-      <td class="words">Посмотрите на неё, как самодовольно виляет хвостами... Тебе просто повезло застать меня врасплох! Я тебе покажу... Давай сыграем ещё одну игру!</td>
+      <td class="words" data-key="p9">Посмотрите на неё, как самодовольно виляет хвостами... Тебе просто повезло застать меня врасплох! Я тебе покажу... Давай сыграем ещё одну игру!</td>
       <td class="port"></td>
 </tr>
 <tr>
@@ -191,13 +178,13 @@
 <tr>
       <td class="port"></td>
       <td class="nameblue">Акаги:</td>
-      <td class="words">А вот и одиннадцатая победа подряд!</td>
+      <td class="words" data-key="p10">А вот и одиннадцатая победа подряд!</td>
       <td class="port"></td>
 </tr>
 <tr>
       <td class="port"></td>
       <td class="nameblue">Амаги:</td>
-      <td class="words">Боюсь, уже довольно поздно... Акаги, нам пора домой.  Мне бы не хотелось мешать тренировкам Каги.</td>
+      <td class="words" data-key="p11">Боюсь, уже довольно поздно... Акаги, нам пора домой.  Мне бы не хотелось мешать тренировкам Каги.</td>
       <td class="port"></td>
 </tr>
 <tr>
@@ -209,20 +196,20 @@
 <tr>
       <td class="port"></td>
       <td class="nameblue">Кага:</td>
-      <td class="words">Что? Сбегаешь потому что боишься наконец проиграть мне?</td>
+      <td class="words" data-key="p12">Что? Сбегаешь потому что боишься наконец проиграть мне?</td>
       <td class="port"></td>
 </tr>
 <tr>
       <td class="port"></td>
       <td class="nameblue">Амаги:</td>
-      <td class="words">Вовсе нет. Через два дня Империя Сакуры проводит  ежегодные военно-морские учения.  Ты ведь не забыла об этом, правда? Кстати говоря, ты согласна с тем что в реальном бою мы более равны чем в настольной игре?</td>
+      <td class="words" data-key="p13">Вовсе нет. Через два дня Империя Сакуры проводит  ежегодные военно-морские учения.  Ты ведь не забыла об этом, правда? Кстати говоря, ты согласна с тем что в реальном бою мы более равны чем в настольной игре?</td>
       <td class="port"></td>
 </tr>
 
 <tr>
       <td class="port"></td>
       <td class="nameblue">Кага:</td>
-      <td class="words">Так и есть. Тогда мы проверим чей корабль современности самый мощный в реальном бою !</td>
+      <td class="words" data-key="p14">Так и есть. Тогда мы проверим чей корабль современности самый мощный в реальном бою !</td>
       <td class="port"></td>
 </tr>
 
@@ -233,22 +220,22 @@
 	<tbody>
 	 <tr>
       <td class="portblue blob">Муцу<img class="portblue" src="./img/mits1.png" /></td>
-      <td class="words blob">Сестрёнка, я проверила всех участников этого года...  и они все кажутся очень целеустремлёнными! Я так взволнована!</td>
+      <td class="words blob" data-key="p15">Сестрёнка, я проверила всех участников этого года...  и они все кажутся очень целеустремлёнными! Я так взволнована!</td>
       <td class="port"></td>
     </tr>
      <tr>
       <td class="port"></td>
-      <td class="words blob">Сколько можно тебе говорить не называть меня "сестрёнка" при посторонних?!</td>
+      <td class="words blob" data-key="p16">Сколько можно тебе говорить не называть меня "сестрёнка" при посторонних?!</td>
       <td class="portblue blob">Нагато<img class="portblue" src="./img/nag1.png" /></td>
     </tr>
      <tr>
       <td class="portblue blob">Муцу<img class="portblue" src="./img/mits1.png" /></td>
-      <td class="words blob">Но ведь ты моя старшая сестра, почему я не могу называть тебя "Сестрёнка"?</td>
+      <td class="words blob" data-key="p17">Но ведь ты моя старшая сестра, почему я не могу называть тебя "Сестрёнка"?</td>
       <td class="port"></td>
     </tr>
     <tr>
       <td class="port"></td>
-      <td class="words blob">*Вздыхает* ... Называй меня как хочешь... Завтра у нас тренировка... Надеюсь всё пройдёт хорошо...</td>
+      <td class="words blob" data-key="p18">*Вздыхает* ... Называй меня как хочешь... Завтра у нас тренировка... Надеюсь всё пройдёт хорошо...</td>
       <td class="portblue blob">Нагато<img class="portblue" src="./img/nag1.png" /></td>
     </tr>
 
@@ -266,13 +253,12 @@
 	
     <tr>
       <td class="portblue blob">Нагато<img class="portblue" src="./img/nag1.png" /></td>
-      <td class="words blob">Я Нагато, флагманский корабль Объединённого флота! Я буду судить военно-морские учения в этом году!<br>
-...В эти неспокойные времена мы сталкиваемся с угрозами со всех сторон, не только со стороны хаоса, который вызывают Сирены, 
-но и со стороны других сил по всему миру. И поэтому...<br>
-... сейчас как никогда мы все должны объедениться!<br>
-И мы должны показать нашим врагам, что флот Империи Сакуры сильнее, чем когда либо прежде!<br>
-<br>*Флагман Объединённого флота и жрица Империи Сакура Нагато пристально обвела взглядом все корабли, присутствовавшие на военных играх.*<br><br>
-Флагманский корабль победившей в военных играх этого года стороны будет назначен следующим флагманом Объединенного флота!</td>
+      <td class="words blob"><p data-key="p19">Я Нагато, флагманский корабль Объединённого флота! Я буду судить военно-морские учения в этом году!</p>
+                            <p data-key="p20">...В эти неспокойные времена мы сталкиваемся с угрозами со всех сторон, не только со стороны хаоса, который вызывают Сирены, но и со стороны других сил по всему миру. И поэтому...</p>
+<p data-key="p21">... сейчас как никогда мы все должны объедениться!</p>
+<p data-key="p22">И мы должны показать нашим врагам, что флот Империи Сакуры сильнее, чем когда либо прежде!</p>
+<p data-key="p23">*Флагман Объединённого флота и жрица Империи Сакура Нагато пристально обвела взглядом все корабли, присутствовавшие на военных играх.*</p>
+<p data-key="p24">Флагманский корабль победившей в военных играх этого года стороны будет назначен следующим флагманом Объединенного флота!</p></td>
       <td class="port"></td>
     </tr>
 
@@ -283,24 +269,24 @@
     </tr>
     <tr>
       <td class="portblue blob">Кага(Линкор)<img class="portblue" src="./img/kagbb1.png" /></td>
-      <td class="words blob">Нагато сама... следующий флагман?!</td>
+      <td class="words blob" data-key="p25">Нагато сама... следующий флагман?!</td>
       <td class="port"></td>
     </tr>
       <tr>
       <td class="port"></td>
-      <td class="words blob">Тишина!<br>Сейчас я объявлю составы команд для учений этого года!<br>Красная команда: Линейный крейсер "Амаги"...<br>Синяя команда: Линкор Кага...</td>
+      <td class="words blob"><p>Тишина!</p><p data-key="p26">Сейчас я объявлю составы команд для учений этого года!</p><p data-key="p27">Красная команда: Линейный крейсер "Амаги"...</p><p data-key="p28">Синяя команда: Линкор Кага...</p></td>
       <td class="portblue blob">Муцу<img class="portblue" src="./img/mits1.png" /></td>
     </tr>
         <tr>
       <td class="portblue blob">Кага(Линкор)<img class="portblue" src="./img/kagbb.png" /></td>
-      <td class="words blob">Какая прелесть! Амаги, ты готова к реваншу?</td>
+      <td class="words blob" data-key="p29">Какая прелесть! Амаги, ты готова к реваншу?</td>
       <td class="port"></td>
     </tr>
          <tr>
       <td class="port"></td>
-      <td class="words blob">Военные учения этого года определят дальнейший курс для нашего Объединенного флота.<br>
-Я хочу, чтобы вы все помнили об этом. Я хочу, чтобы вы продемонстрировали, всё на что вы способны, и боролись в полную силу!<br>
-...Теперь, начнём же учения Объединённого флота!</td>
+      <td class="words blob"><p data-key="p30">Военные учения этого года определят дальнейший курс для нашего Объединенного флота.</p>
+      <p data-key="p31">Я хочу, чтобы вы все помнили об этом. Я хочу, чтобы вы продемонстрировали, всё на что вы способны, и боролись в полную силу!</p>
+      <p data-key="p32">...Теперь, начнём же учения Объединённого флота!</p></td>
       <td class="portblue blob">Нагато<img class="portblue" src="./img/nag1.png" /></td>
     </tr>
 
@@ -2032,6 +2018,9 @@
   </table>
 </div> <!-- конец главы -->
   </div>
+
+
+
 
 </body>
 </html>
