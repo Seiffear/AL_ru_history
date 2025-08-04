@@ -1,0 +1,490 @@
+.buitton_back {
+    display: block;
+    margin-bottom: 8px;
+    padding-left: 22px;
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0px 1px 4px #000;
+    text-shadow: 0px 1px 4px 0px #000;
+    height: 20px;
+    line-height: 20px;
+    text-decoration: none;
+    font: 14pt Arial;
+    text-align: left;
+}
+
+.buitton_back img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -10px;
+}
+
+.buitton_back img.on {
+    opacity: 0;
+}
+
+.buitton_back a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    
+    }
+
+.head_ev {
+
+  
+      width: 100%;
+    height: 360px;
+    position: relative;
+}
+
+.head_ev_diverchess {
+  min-width: 1280px;
+background: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/head.png), no-repeat center top #192455;
+  background-attachment: fixed;
+
+}
+
+.head_ev_info {
+
+  min-width: 1280px;
+  margin: 0 auto;
+  padding-top: 8px
+}
+
+h1 {
+  font: 20pt Montserrat; 
+  font-weight: 700;
+  color: red;
+  text-shadow: -1px -1px 0 black,1px -1px 0 black,-1px 1px 0 black, 1px 1px 0 black;
+}
+
+.nav {
+  margin: 5px;
+  min-width: 1280px;
+}
+
+#floating-button {
+  position: fixed;
+  z-index: 100;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+ 
+#floating-button:hover {
+   background-color: #ff7961;
+}
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.background1 {
+ background-image: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/bg_church.png);
+ background-size: auto 100%;
+}
+
+.background2 {
+ background-image: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/bg_iris_dusk.png);
+ background-size: auto 100%;
+}
+
+.background3 {
+ background-image: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/star_level_bg_115.png);
+ background-size: auto 100%;
+}
+
+.background4 {
+ background-image: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/bg_iris_night.png);
+ background-size: auto 100%;
+}
+
+.background5 {
+ background-image: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/bg_hms_7.png);
+ background-size: auto 100%;
+}
+
+.background6 {
+ background-image: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/bg_underwater.png);
+ background-size: auto 100%;
+}
+
+.background7 {
+ background-image:url(./img/star_level_bg_1104.png);
+ background-size: auto 100%;
+}
+
+.background8 {
+ background-image: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/bg_story_nepu2.png);
+ background-size: auto 100%;
+}
+
+.background9 {
+ background-image: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/bg_xiangting_3.png);
+ background-size: auto 100%;
+}
+
+.background10 {
+ background-image: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/bg_deepecho_9.png);
+ background-size: auto 100%;
+}
+
+.background11 {
+ background: black;
+ background-size: auto 100%;
+}
+
+.background12 {
+ background-image: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/bg_deepecho_7.png);
+ background-size: auto 100%;
+}
+
+.background13 {
+ background-image: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/bg_story_task1.png);
+ background-size: auto 100%;
+}
+
+.background14 {
+ background-image: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/bg_cccpv2_91.png);
+ background-size: auto 100%;
+}
+
+.background15 {
+ background-image: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/bg_deepecho_11.png);
+ background-size: auto 100%;
+}
+
+.background16 {
+ background-image: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/bg_deepecho_12.png);
+ background-size: auto 100%;
+}
+
+.background17 {
+ background-image: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/star_level_bg_116.png);
+ background-size: auto 100%;
+}
+
+.background18 {
+ background-image: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/bg_guild_blue.png);
+ background-size: auto 100%;
+}
+
+
+.whiteword {
+color: gray;
+text-shadow: 0px 0px 0 black;
+}
+
+.whiteworld {
+  height: 500px;
+}
+
+.mainchapter { 
+  margin: auto;
+  color: white;
+  background-color: #000000;
+  padding: 3px;
+  width: 1280px;
+  font: 16pt Montserrat; 
+  font-weight: 700;
+  text-shadow: -1px -1px 0 black,1px -1px 0 black,-1px 1px 0 black, 1px 1px 0 black; 
+}
+
+.blackscreen {
+  margin: auto;
+  color: white;
+  background-color: #000000;
+  padding-left: 20%;
+  text-align: left;
+  width: 1280px;
+  font: 16pt Montserrat; 
+  font-weight: 700; 
+}
+
+.maince2 {
+ 
+  margin: auto;
+  color: white;
+  background-color: #000099;
+  padding: 3px;
+  background-image: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/bg_story_tiancheng1.png);
+  background-size: auto 100%;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
+  width: 1280px;
+  border-spacing: 10px;
+  
+  
+}
+
+
+.maince3 {
+ 
+  margin: auto;
+  color: white;
+  background-color: #000099;
+  padding: 3px;
+  background-image: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/bg_story_tiancheng2.png);
+  background-size: auto 100%;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
+  width: 1280px;
+  border-spacing: 10px;
+  
+  
+}
+
+.maince4 {
+ 
+  margin: auto;
+  color: white;
+  background-color: #000099;
+  padding: 3px;
+  background-image: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/bg_story_tiancheng3.png);
+  background-size: auto 100%;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
+  width: 1280px;
+  border-spacing: 10px;
+  
+  
+}
+
+.maince5 {
+ 
+  margin: auto;
+  color: white;
+  background-color: #000099;
+  padding: 3px;
+  background-image: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/bg_story_tiancheng4.png);
+  background-size: auto 100%;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
+  width: 1280px;
+  border-spacing: 10px;
+  
+  
+}
+
+.maince6 {
+ 
+  margin: auto;
+  color: white;
+  background-color: #000099;
+  padding: 3px;
+  background-image: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./img/bg_story_tiancheng6.png);
+  background-size: auto 100%;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
+  width: 1280px;
+  border-spacing: 10px;
+  
+  
+}
+
+.pict1 {
+
+  width: 1280px;
+}
+
+.blob {
+
+background-image: linear-gradient(180deg,rgba(213,254,255,0.2),rgba(213,254,255,0.2))
+
+}
+
+
+body {
+  background-color: #b8c1c9;
+  text-align: center;  
+  } 
+
+   .chapter {
+background-color: #3c3838;
+width: 1300px;
+margin: auto;
+padding: 10px;
+margin-top: 10px;
+
+   }
+
+  .title-1 {
+    color:white;
+    text-align: center;
+    font-weight: bold;
+    font: 20pt Helvetica;
+  }
+
+  .port {
+  width: 116px;
+  color: #FF0000;
+  font: 16pt Helvetica;
+  font-weight: 700;
+
+}
+
+.portblue img {
+  border: 2px solid #6699FF;
+}
+
+.portblue {
+  width: 116px;
+  color: #6699FF;
+  font: 16pt Helvetica;
+  font-weight: 700;
+}
+
+.portgray {
+  width: 116px;
+  color: gray;
+  font: 16pt Helvetica;
+  font-weight: 700;
+}
+
+.portgray img {
+  border: 2px solid gray;
+}
+
+.portwhite {
+  width: 116px;
+  color: #FFFFFF;
+  font: 16pt Helvetica;
+  font-weight: 700;
+}
+
+
+.portred img {
+  border: 2px solid #FF0000;
+
+}
+
+.portred {
+  width: 116px;
+  color: #FF0000;
+  font: 16pt Helvetica;
+  font-weight: 700;
+
+}
+
+.portorange img {
+  border: 2px solid orange;
+
+}
+
+.portorange {
+  width: 116px;
+  color: orange;
+  font: 16pt Helvetica;
+  font-weight: 700;
+
+}
+
+.longname {
+ font: 14pt Helvetica !important;
+ 
+}
+
+.portgreen img {
+  border: 2px solid #00FF00;
+
+}
+
+.portgreen {
+  width: 116px;
+  color: #00FF00;
+  font: 16pt Helvetica;
+  font-weight: 700;
+
+}
+
+.portyellow {
+  width: 116px;
+  color: #FFFF00;
+  font: 16pt Helvetica;
+  font-weight: 700;
+
+}
+
+.portyellow img {
+  border: 2px solid #FFFF00;
+
+}
+
+.words {
+ text-align: left;
+ padding: 1.5%;
+} 
+
+
+.nameblue {
+  color: #6699FF;
+  font: 16pt Helvetica;
+  font-weight: 700;
+}
+
+.namered {
+  color: #FF0000;
+  font: 16pt Helvetica;
+  font-weight: 700;
+}
+
+.loc {
+ text-align: center; 
+}
+
+.pict {
+width: auto;
+}
+
+.main {
+  width: 100%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.t1 {
+  position: fixed;
+        top: 0; 
+        left: 0; 
+        background: #333333;
+        color: #ffffff;
+        font: 20pt Helvetica;
+}
+
+
+
+
